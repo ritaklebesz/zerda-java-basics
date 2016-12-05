@@ -124,9 +124,23 @@ class TestApple {
 
 ### Where the abstract class is useful? [2p]
 #### Your answer:
+An abstract class has abstract methods in addition to normal methods. It is useful if we don't want to specify what the method does, just want to make sure all of its subclasses have this method and override it in a meaningful way. 
 
 ### Describe a method! Show the necessary parts and how are them called! [2p]
 #### Your answer:
+access_modifier static return_type method_name(arguments) {
+  method body
+  return statement;
+}
+access_modifier is optional, can be public, private, protected, default(package private) if not stated.
+static optial, absent if the method is not static
+return type, necessary or void, if the method does not return anything. If void we do not need a return statement within the body.
+method name is necessary, it should be a verb with camelCase.
+Arguments or parameters are optional.
+The method name and its parameters called the method signature.
+If the method is abstract than we need to state it after the access modifier, and in that case the body is missing.
+
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
+A constructor is a special method of a class, with the same name as the class, hence it starts with capital letter. It is used for initialization. It is called when an object of the class is instantiated.
