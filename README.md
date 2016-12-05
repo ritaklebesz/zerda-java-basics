@@ -107,6 +107,7 @@ Are the tests passing? Detail your answer! [2p] Fix the situation! [2p]
 
 #### Explain what you did, and answer the questions here:
 The tests would not run currently. The way the are written in the test methods, it is assumed that they are static methods of the Apple class. In order to make them run we either have to make them static methods in the App class or instantiate an Apple in the Test class inside or outside the test methods. This way the tests would run and both would pass.
+```java
 class TestApple {
   Apple apple = new Apple();
   public void testAdd() {
@@ -117,6 +118,7 @@ class TestApple {
     assertEquals(5, apple.max_of_three(3, 4, 5));
   }
 }
+```
 
 
 
@@ -124,7 +126,7 @@ class TestApple {
 
 ### Where the abstract class is useful? [2p]
 #### Your answer:
-An abstract class has abstract methods in addition to normal methods. It is useful if we don't want to specify what the method does, just want to make sure all of its subclasses have this method and override it in a meaningful way. 
+An abstract class has abstract methods in addition to normal methods. It is useful if we don't want to specify what the method does, just want to make sure all of its subclasses have this method and override it in a meaningful way.
 
 ### Describe a method! Show the necessary parts and how are them called! [2p]
 #### Your answer:
