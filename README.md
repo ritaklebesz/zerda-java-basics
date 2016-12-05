@@ -130,17 +130,19 @@ An abstract class has abstract methods in addition to normal methods. It is usef
 
 ### Describe a method! Show the necessary parts and how are them called! [2p]
 #### Your answer:
+```
 access_modifier static return_type method_name(arguments) {
   method body
   return statement;
 }
 access_modifier is optional, can be public, private, protected, default(package private) if not stated.
-static optial, absent if the method is not static
+static optial, absent if the method is not static.
 return type, necessary or void, if the method does not return anything. If void we do not need a return statement within the body.
 method name is necessary, it should be a verb with camelCase.
 Arguments or parameters are optional.
 The method name and its parameters called the method signature.
 If the method is abstract than we need to state it after the access modifier, and in that case the body is missing.
+```
 
 
 ### What is the constructor? When it is used? [2p]
