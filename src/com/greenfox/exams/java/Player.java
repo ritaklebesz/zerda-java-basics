@@ -14,7 +14,7 @@ public class Player {
         played = new ArrayList<>();
     }
 
-    int sum() {
+    public int sum() {
         int sum = 0;
         for (Card card : played) {
             sum += card.getValue();
@@ -22,7 +22,15 @@ public class Player {
         return sum;
     }
 
-    void add(Card card) {
+    public void add(Card card) {
         played.add(card);
+    }
+
+    public String toString() {
+        String str = name + "played:";
+        for (Card card : played) {
+            str += " " + card.toString();
+        }
+        return str;
     }
 }
