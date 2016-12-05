@@ -28,7 +28,7 @@ public class Deck {
         Collections.shuffle(cards);
     }
 
-    public Card drawACard() {
+    public Card drawCard() {
         if (cards.size() > 0) {
             Card card = cards.get(0);
             cards.remove(0);
