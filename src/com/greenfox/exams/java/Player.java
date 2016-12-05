@@ -27,7 +27,7 @@ public class Player {
     }
 
     public String toString() {
-        String str = name + "played:";
+        String str = name + " played:";
         for (Card card : played) {
             str += " " + card.toString();
         }
