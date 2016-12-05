@@ -126,7 +126,7 @@ class TestApple {
 
 ### Where the abstract class is useful? [2p]
 #### Your answer:
-An abstract class has abstract methods in addition to normal methods. It is useful if we don't want to specify what the method does, just want to make sure all of its subclasses have this method and override it in a meaningful way.
+An abstract class has abstract methods in addition to normal methods. It is useful if we don't want to specify what the method does, just want to make sure all of its subclasses have this method and overwrite it in a meaningful way.
 
 ### Describe a method! Show the necessary parts and how are them called! [2p]
 #### Your answer:
