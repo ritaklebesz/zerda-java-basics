@@ -106,6 +106,18 @@ class TestApple {
 Are the tests passing? Detail your answer! [2p] Fix the situation! [2p]
 
 #### Explain what you did, and answer the questions here:
+The tests would not run currently. The way the are written in the test methods, it is assumed that they are static methods of the Apple class. In order to make them run we either have to make them static methods in the App class or instantiate an Apple in the Test class inside or outside the test methods. This way the tests would run and both would pass.
+class TestApple {
+  Apple apple = new Apple();
+  public void testAdd() {
+    assertEquals(5, apple.add(2, 3));
+  }
+
+  public void testMax() {
+    assertEquals(5, apple.max_of_three(3, 4, 5));
+  }
+}
+
 
 
 ## 4. Question time! (~20 mins) [6p]
